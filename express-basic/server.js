@@ -12,6 +12,10 @@ app.get('/', (req, res) => {
     res.send('<h1 style="text-align: center; font-size: 6rem;">Hello Sekai!</h1>')
 })
 
+app.get('/home', (req, res) => {
+    res.sendFile(__dirname + '/index.html')
+})
+
 app.get('/calculator', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
