@@ -1,3 +1,5 @@
-/express-basic/node_modules/
-/.idea
-/.vscode
+.vscode/
+.idea/
+node_modules/
+
+*/node_modules/
