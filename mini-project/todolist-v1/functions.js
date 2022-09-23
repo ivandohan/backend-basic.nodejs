@@ -1,3 +1,5 @@
+const {list, day} = require('./data')
+
 function toTitleCase(str) {
     str = str.toString()
     str = str.toLowerCase()
@@ -5,4 +7,16 @@ function toTitleCase(str) {
     return str.replace(str[0], str[0].toUpperCase())
 }
 
-module.exports = toTitleCase
+function getDate() {
+    return day
+}
+
+function getList() {
+    return list
+}
+
+function setList(newList) {
+    list.push(toTitleCase(newList))
+}
+
+module.exports = {getDate, getList, setList}

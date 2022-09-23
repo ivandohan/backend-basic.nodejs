@@ -5,44 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todolist App</title>
-    <style>
-        header .title {
-            text-align: center;
-            background-color: aquamarine;
-        }
-        .title h1 {
-            font-size: 4rem;
-        }
-        .title p {
-            font-size: 2rem;
-        }
-        .list-item, .input-list {
-            text-align: center;
-            font-size: 2rem;
-        }
-    </style>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div class="title">
+        <div class="box" id="heading">
             <h1>Todolist Simple</h1>
             <p><%= dayFormatted %></p>
         </div>
     </header>
 
     <main>
-        <div class="list-item">
-            <ul>
-                <% for(let i = 0; i < listItem.length; i++) {%>
-                    <li><%= listItem[i] %></li>
-                <% } %>
-            </ul>
-        </div>
-        <div class="input-list">
-            <form method="post">
-                <label for="newlist">Input new list :</label>
-                <input type="text" name="newList" id="newlist">
-                <button type="submit">Add</button>
+        <div class="box">
+            <% for(let i = 0; i < listItem.length; i++) {%>
+            <div class="item">
+                <input type="checkbox">
+                <p><%= listItem[i] %></p>   
+            </div>
+            <% } %>
+            
+            <form method="post" class="item">
+                <input type="text" name="newList" id="newlist" autofocus placeholder="Add new item" autocomplete="off">
+                <button type="submit">+</button>
             </form>
         </div>
     </main>
