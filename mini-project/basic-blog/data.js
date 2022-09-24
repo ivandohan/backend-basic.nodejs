@@ -4,4 +4,6 @@ const aboutContent = "Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
 
 const contactContent = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum incidunt natus ipsam unde, id quos vel iusto, saepe adipisci, quia omnis. Veritatis accusamus, commodi corporis voluptatibus, in officia quia corrupti necessitatibus earum labore quod enim, facilis vero. Et error sit in earum esse. Laudantium consequuntur cum dolores. Nobis dolores minima error sint amet provident iure maiores eius fuga eaque, culpa voluptates nisi harum, cumque rerum distinctio, expedita eos nihil saepe sit? Ab nulla ut architecto magni et! Consequuntur, tenetur quo."
 
-module.exports = {homeStartingContent, aboutContent, contactContent}
+let posts = []
+
+module.exports = {homeStartingContent, aboutContent, contactContent, posts}
