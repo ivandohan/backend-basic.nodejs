@@ -2,6 +2,9 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const {getDate, getList, setList} = require('./functions')
 
+
+// Greening
+
 const app = express()
 app.use(bodyParser.urlencoded({extended: true}))
 app.set('view engine', 'ejs')
